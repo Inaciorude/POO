@@ -28,6 +28,10 @@ namespace ExemploPOO
 
             //c.ExibirSaldo();
 
+            //Calculadora calc = new Calculadora();
+            //System.Console.WriteLine("Resultado da primeira soma: " + calc.Somar(10, 10));
+            //System.Console.WriteLine("Resultado da segunda soma: " + calc.Somar(10, 10, 10));
+
             //Aluno p1 = new Aluno();
             //p1.Nome = "Bob";
             //p1.Idade = 20;
