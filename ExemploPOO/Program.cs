@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using ExemploPOO.Helper;
 using ExemploPOO.Models;
 
 namespace ExemploPOO
@@ -7,19 +9,38 @@ namespace ExemploPOO
     {
         static void Main(string[] args)
         {
-            Aluno p1 = new Aluno();
-             p1.Nome = "Bob";
-             p1.Idade = 20;
-             p1.Documento = "123456";
-             p1.Nota = 10;
-             p1.Apresentar();
+            var caminho = "C:\\TrabalhandoComArquivos";
+            var caminhoPathCombine = Path.Combine(caminho, "Pasta Teste 1");
+            var caminhoArquivo = Path.Combine(caminho, "arquivo-teste.txt");
+            var listaString = new List<string> { "Linha 1", "Linha 2" , "linha3"};
 
-             Professor p2 = new Professor();
-             p2.Nome = "Bob";
-             p2.Idade = 20;
-             p2.Documento = "123456";
-             p2.Salario = 3500;
-             p2.Apresentar();
+            FileHelper helper = new FileHelper();
+            // helper.ListarDiretorios(caminho);
+            //helper.ListarArquivosDiretorios(caminho);
+            //helper.ApagarDiretorio(caminhoPathCombine, true);
+            //System.Console.WriteLine("Criando diretório: " + caminhoPathCombine);
+            //helper.CriarDiretorio(caminhoPathCombine);
+            //helper.CriarArquivoTexto(caminhoArquivo, "Olá! Teste de escrita de arquivo.");
+            
+            
+            //Corrente c = new Corrente();
+            //c.Creditar(100);
+
+            //c.ExibirSaldo();
+
+            //Aluno p1 = new Aluno();
+            //p1.Nome = "Bob";
+            //p1.Idade = 20;
+            // p1.Documento = "123456";
+            // p1.Nota = 10;
+            // p1.Apresentar();
+
+            //Professor p2 = new Professor();
+            //p2.Nome = "Bob"   
+            //p2.Idade = 20;
+            //p2.Documento = "123456";
+            //p2.Salario = 3500;
+            //p2.Apresentar();
         
 
 
